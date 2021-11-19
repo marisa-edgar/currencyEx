@@ -32,5 +32,15 @@ export default class currencyService {
     const MKD = parseFloat(body[14].price);
     const NOK = parseFloat(body[15].price);
     const PLN = parseFloat(body[16].price);
+    const RON = parseFloat(body[17].price);
+    const RUB = parseFloat(body[18].price);
+    const RSD = parseFloat(body[19].price);
+    const SEK = parseFloat(body[20].price);
+    const CHF = parseFloat(body[21].price);
+    const TRY = parseFloat(body[22].price);
+    const UAH = parseFloat(body[23].price);
+    const UAH = parseFloat(body[24].price);
+    const GBP = parseFloat(body[25].price);
+    const EUR = parseFloat(body[26].price);
   }
 }
