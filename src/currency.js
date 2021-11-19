@@ -1,4 +1,4 @@
-export default class currencyService {
+export default class CurrencyService {
   static getCurrency() {
     return new Promise(function(resolve, reject){
       let request = new XMLHttpRequest();
