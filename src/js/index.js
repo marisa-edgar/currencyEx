@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import CurrencyService from "./js/currency.js";
+import CurrencyService from "./currency.js";
 
 $(document).ready(function(){
   $('currencyConvert').click(function() {
@@ -20,7 +20,7 @@ $(document).ready(function(){
         $('.showConverter').html(currencyCovert);
       }
     }, function(error) {
-      $('.showErrors').text('There was an error processing your request: ${error}');
-    })
-  })
-})
+      $('.showErrors').text(`There was an error processing your request: ${error}`);
+    });
+  });
+});
