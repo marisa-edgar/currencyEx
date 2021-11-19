@@ -36,12 +36,11 @@ export default class CurrencyService {
     const RUB = parseFloat(body[18].price);
     const RSD = parseFloat(body[19].price);
     const SEK = parseFloat(body[20].price);
-    const CHF = parseFloat(body[21].price);
-    const TRY = parseFloat(body[22].price);
-    const UAH = parseFloat(body[23].price);
-    const GBP = parseFloat(body[24].price);
-    const EUR = parseFloat(body[25].price);
-    let covertArr =[];
+    const TRY = parseFloat(body[21].price);
+    const UAH = parseFloat(body[22].price);
+    const GBP = parseFloat(body[23].price);
+    const EUR = parseFloat(body[24].price);
+    let convertArr =[];
 
     if ( number !== 0) {
       convertArr.push(`USD to ALL : ${number/ALL}<br>`);
@@ -65,7 +64,6 @@ export default class CurrencyService {
       convertArr.push(`USD to RUB : ${number/RUB}<br>`);
       convertArr.push(`USD to RSD : ${number/RSD}<br>`);
       convertArr.push(`USD to SEK : ${number/SEK}<br>`);
-      convertArr.push(`USD to CHF : ${number/CHF}<br>`);
       convertArr.push(`USD to TRY : ${number/TRY}<br>`);
       convertArr.push(`USD to UAH : ${number/UAH}<br>`);
       convertArr.push(`USD to GBP : ${number/GBP}<br>`);
