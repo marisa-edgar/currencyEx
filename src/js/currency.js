@@ -2,7 +2,7 @@ export default class CurrencyService {
   static getCurrency() {
     return new Promise(function(resolve, reject){
       let request = new XMLHttpRequest();
-      const url = `https://v6.exchangerate-api.com/v6/key=${process.env.API_KEY}latest/USD`;
+      const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
       request.onload =function() {
         if (this.status === 200) {
           resolve(request.response);
@@ -71,5 +71,6 @@ export default class CurrencyService {
     } else {
       return 0;
     }
+    return convertArr;
   }
 }
